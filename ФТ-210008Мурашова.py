@@ -8,6 +8,9 @@ def input_int(text):
         except:
             print('Ошибка: введено неверное значение! Попробуйте ещё раз...')
             continue
+        if n<1:
+            print('Ошибка: число должно быть положительным! Попробуйте ещё раз...')
+            continue
         return n
 
 countOfCriteria = input_int('Введите количество критериев: ')
